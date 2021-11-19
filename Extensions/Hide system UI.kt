@@ -1,3 +1,7 @@
+// This methods should be called in Activity's onCreate after setContentView or in DialogFragment in onViewCreated.
+
+supportActionBar?.hide() // It's not extension, but should be here. It hides action bar of activity. 
+
 // Hides system UI in Activity. Doesn't support versions lower than API23 Marshmallow. 
 fun Activity.hideSystemUI() {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
