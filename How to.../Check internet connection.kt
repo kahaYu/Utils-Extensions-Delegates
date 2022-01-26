@@ -1,4 +1,4 @@
-// Put this fun in the ViewModel for example
+// Put this fun in the ViewModel for example.
 
 private fun hasInternetConnection(): Boolean {
         val connectivityManager = getApplication<NewsApplication>().getSystemService(Context.CONNECTIVITY_SERVICE)
