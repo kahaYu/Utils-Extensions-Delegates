@@ -1,0 +1,2 @@
+// Add to manifest to the needed activity
+android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
