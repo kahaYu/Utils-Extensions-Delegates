@@ -1,5 +1,8 @@
 // Makes value auto cleared in onDestoy method. 
 // It's useful for binding objects of DataBinding and ViewBinding. Used in Fragments, because there is no need to null binding object in Activity. 
+
+import kotlin.reflect.KProperty
+
 class AutoClearedValue<T : Any>(val fragment: Fragment) : ReadWriteProperty<Fragment, T> {
     private var _value: T? = null
 
